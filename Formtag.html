@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        form{
+            text-align: center;
+            border-style: double;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT form</title>
+</head>
+<body>
+    <form >
+    <h1>Payment Form</h1>
+    <hr>
+    <h2>Personal Information</h2><br>
+    <p>NAME : <input type="name" required ></p>
+    <p>Last Name : <input type="last name" required ></p>
+    <p>Date Of Birth : <input type="date" name="date" id="date"> </p>
+    <fieldset>
+        <legend>  Gender </legend>
+            <p> Male<input type="radio" name="gender" id="male">Female <input type="radio" name="gender" id="female">Others <input type="radio" name="gender" id="gender"></p> 
+        </fieldset>
+        <fieldset>
+    <p>Email : <input type="email" name="email" id="email"></p>
+    <p>Mobile NO. : <input type="number" name="mobile no." id="mobile no."></p>
+        </fieldset>
+        <p>Address : <textarea name="address" id="address" cols="30" rows="10"></textarea></p>
+        <hr>
+        <h2>Payment Information</h2>
+        <p>Card Type : 
+            <select>
+                <option value="">---Select Type---</option>
+                <option value="visa">Visa</option>
+                <option value="rupay">Rupay</option>
+                <option value="mastercard">Mastercard</option>
+            </select>
+        </p>
+        <p>Card No. : <input type="number" name="card no." id="card no." required ></p>
+        <p>CVV : <input type="password" name="cvv" id="cvv" required ></p>
+        <p><input type="submit" value="Pay Now"> <input type="reset" value="Reset"></p>
+        <hr><p style="font-style: italic;" >created by Aditya R. Jawanjal</p>
+</form>
+</body>
+</html>
